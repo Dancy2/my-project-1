@@ -17,11 +17,10 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="theme-toggle">
-            <i class="bx bx-sun" id="theme-light" style="display: none;"></i>
+            <i class='bx bxs-sun' style='color:#f5f2f2'id="theme-light" style="display: none;"></i>
             <i class="bx bx-moon" id="theme-dark"></i>
         </div>
     </header>
@@ -40,7 +39,6 @@
             <li><a href="#home" onclick="toggleMenu()">Home</a></li>
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#skills"onclick="toggleMenu()">Skills</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
         </div>
         </div>
@@ -52,108 +50,115 @@
     <section class="home" id="home">
         <div class="home-content">
             <div class="home-img">
-                <img src="/assets/portfolio picture.jpg" alt="Kamogelo Taueatsoala Profile Picture">
+               <img src="/assets/portfolio picture.jpg">
             </div>
             <h1>Hello, I'm Kamogelo</h1>
-                <h3>Aspiring Business Analyst</h3>
-                <p>Welcome to this portfolio! I’m a final-year IT student with a passion for technology and problem-solving. As I approach the culmination of my academic journey, I’ve had the opportunity to dive into diverse projects and hands-on experiences, from software development to system analysis. This portfolio showcases skills and projects, highlighting a commitment to innovation and readiness to tackle real-world challenges in the tech industry. Explore the work to see how I can contribute to your next technology-driven initiative.</p>
-                <div class="btn-group">
-                    <button class="btn" onclick="location.href='./#contact'" >
-                        Contact Info
-                    </button>
-                </div>
-            </br>
-                <div class="social-container">
-                    <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icons" onclick=location.href="https://linkedin.com/">
-                    <img src="./assets/github.png" alt="My Github Profile " class="icons" onclick=location.href="https://github.com/">
-                </div>
-        </div>    
+            <h3>Aspiring Business Analyst</h3>
+            <p>
+                Welcome to this portfolio! I’m a final-year IT student with a passion for technology and problem-solving. As I approach the culmination of my academic journey, I’ve had the opportunity to dive into diverse projects and hands-on experiences, from software development to system analysis. This portfolio showcases skills and projects, highlighting a commitment to innovation and readiness to tackle real-world challenges in the tech industry. Explore the work to see how I can contribute to your next technology-driven initiative.
+            </p>
+            <div class="btn-group">
+                <a class="btn" href="#contact">Contact Info</a>
+            </div>
+        </br>
+            <div class="social-container">
+                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icons">
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/github.png" alt="My Github Profile" class="icons">
+                </a>
+            </div>
+        </div>
     </section>
-
+    
     <!-- About Me Section -->
     <section class="about" id="about">
-        <p class="section__text__p">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                    <img src="/assets/portfolio picture.jpg" alt="Kamogelo Taueatsoala"  class="about-img"/>
-            </div>
             <div class="about-details-container">
                 <div class="about-container">
                     <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon"/>
-                        <h3>Education</h3>
-                        <p>B.Sc. Bachelors Degree in Information Technology</p>
+                        <p class="section__text__p">Get To Know More</p>
+                        <h1 class="title">About Me</h1>
+                        <div class="section-container">
+                            <div class="section__pic-container">
+                                </div>
+                            <div class="box-education1">
+                                <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                                <h3>Education</h3>
+                                
+                                <p>B.Sc. Bachelors Degree in Information Technology</p>
+                                <p>2022-current</p>
+                            </div>
+                            <div class="box-education2">
+                                <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                                <h3>Education</h3>
+                                
+                                <p>National Senior Certificate</p>
+                                <p>2017-2021</p>
+                            </div>
+                        </div>
+                    </br>
+                        <div>
+                            <button class="btn-download" onclick="window.open('./assets/')">Download CV
+                            </button>   
+                       
+                        </div>
                     </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="container-box">Skills</h2>
+            <div class="grid">
+                <div class="skill-card">
+                    <h3 class="skill-title">Business Analysis</h3>
+                    <p>Proficient in analyzing business processes, identifying needs, and recommending solutions to improve efficiency and effectiveness. Skilled in stakeholder management, data analysis, and strategic planning.</p>
                 </div>
-                    <div class="about-content">
-            
-                        <p>I’m a tech enthusiast driven to make an impact in the IT world. With a passion for innovation and problem-solving, I’m constantly exploring new challenges and opportunities. Take a look at my portfolio to see my latest work, and feel free to reach out if you’d like to connect or collaborate!</p>
-                    </div>
-                    <!-- Download CV Button -->
-                    <a href="/assets/Kamogelo_Taueatsoala_CV.pdf" download="Kamogelo_Taueatsoala_CV" class="btn btn-download">Download CV</a>
+                <div class="skill-card">
+                    <h3 class="skill-title">System Analysis</h3>
+                    <p>Experienced in analyzing and designing system requirements to meet business needs, improving system efficiency, and ensuring alignment with business goals.</p>
+                </div>
+                <div class="skill-card">
+                    <h3 class="skill-title">Data Structure and Algorithm</h3>
+                    <p>Strong understanding of fundamental data structures and algorithms, including arrays, linked lists, trees, and sorting algorithms, with the ability to apply them to solve complex problems.</p>
+                </div>
+                <div class="skill-card">
+                    <h3 class="skill-title">Java</h3>
+                    <p>Proficient in Java programming, including object-oriented programming principles, Java libraries, and frameworks for building robust and scalable applications.</p>
                 </div>
             </div>
         </div>
-         
     </section>
-
-  <section id="skills" class="bg-gray-100 py-16">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold mb-8 text-center text-primary">Skills</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-bold mb-4">Business Analyst</h3>
-          <p>Proficient in analyzing business processes, identifying needs, and recommending solutions to improve efficiency and effectiveness. Skilled in stakeholder management, data analysis, and strategic planning.</p>
+    
+      
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="contact-heading">Contact Me</h2>
+            <div class="form-container">
+                <form action="mailto:your.ktaueatsoala@outlook.com" method="post" enctype="text/plain" class="contact-form">
+                    <label class="form-label">
+                        <span class="form-label-text">Name</span>
+                        <input type="text" name="name" class="form-input" required>
+                    </label>
+                    <label class="form-label">
+                        <span class="form-label-text">Email</span>
+                        <input type="email" name="email" class="form-input" required>
+                    </label>
+                    <label class="form-label">
+                        <span class="form-label-text">Message</span>
+                        <textarea name="message" class="form-textarea" rows="4" required></textarea>
+                    </label>
+                    <button type="submit" class="btn-submit">Send</button>
+                </form>
+            </div>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-bold mb-4">UI/UX Design</h3>
-          <p>Proficient in designing user interfaces that are both visually appealing and user-friendly.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-bold mb-4">Backend Knowledge</h3>
-          <p>Understanding of backend technologies like Node.js and Express, with experience in building APIs.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+</body>
+</html>
 
-  <section id="projects" class="py-16">
-    <div class="container mx-auto px-4">
-      <h2 class="projects">Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Project Block -->
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-bold mb-4">Project Title</h3>
-          <p></p>
-        </div>
-        <!-- Repeat Project Block -->
-      </div>
-    </div>
-  </section>
+    
 
-  <section id="contact" class="bg-gray-100 py-16">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold mb-8 text-center text-primary">Contact Me</h2>
-      <form action="mailto:your.email@example.com" method="post" enctype="text/plain" class="max-w-lg mx-auto">
-        <label class="block mb-4">
-          <span class="text-gray-700">Name</span>
-          <input type="text" name="name" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-        </label>
-        <label class="block mb-4">
-          <span class="text-gray-700">Email</span>
-          <input type="email" name="email" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
-        </label>
-        <label class="block mb-4">
-          <span class="text-gray-700">Message</span>
-          <textarea name="message" class="form-textarea mt-1 block w-full border-gray-300 rounded-md shadow-sm" rows="4" required></textarea>
-        </label>
-        <button type="submit" class="bg-accent text-white py-2 px-6 rounded-full hover:bg-blue-600 transition">Send</button>
-      </form>
-    </div>
-  </section>
-
-  <footer class="bg-primary text-secondary py-4 text-center">
+  <footer class="black text-secondary py-4 text-center">
     <p>&copy; 2024 Kamogelo Taueatsoala. All rights reserved.</p>
   </footer>
 
