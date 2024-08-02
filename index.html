@@ -1,115 +1,116 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name=" "viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Kamogelo Taueatsoala </title>
-        <link rel="stylesheet" href="style.css"/>
-        <link href = "https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamogelo Taueatsoala</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="#home" class="logo">Kamogelo <span>Taueatsoala</span></a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="theme-toggle">
+            <i class="bx bx-sun" id="theme-light" style="display: none;"></i>
+            <i class="bx bx-moon" id="theme-dark"></i>
+        </div>
+    </header>
 
-        <header class="header">
-            <a href="#home" class="logo">Kamogelo
-                <span>
-                    Taueatsoala
-                </span>
-            </a>
-            <i class="bx bx-menu" id = "menu-icon"></i>
-            <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-
-        <section class="home" id="home">
-            <div class="home-content">
-                <h1>
-                    Hi, it's <span>
-                        Kamogelo
-                    </span>
-                </h1>
-                <h3>
-                    I'm a <span>
-                        Frontend Developer
-                    </span>
-                </h3>
-                    <p>
-                        Welcome to this portfolio! I’m a final-year IT student with a passion for technology and problem-solving. As I approach the culmination of my academic journey, I’ve had the opportunity to dive into diverse projects and hands-on experiences, from software development to system analysis. This portfolio showcases skills and projects, highlighting a commitment to innovation and readiness to tackle real-world challenges in the tech industry. Explore the work to see how I can contribute to your next technology-driven initiative.
-                    
-                    </p>
-                    <div class="social-icons">
-                        <a href="#">
-                            <i class = "bx bxl-github">
-                            </i>
-                        </a>
-                        <a href="#">
-                             <i class="bx bxl-linkedin-square" ></i>
-                        </a>
-                        <a href="#">
-                            <i class='bx bx-envelope'></i>
-                        </a>
-            </div>
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, it's Kamogelo</h1>
+            <h3>Aspiring Business Analyst</h3>
+            <p>Welcome to this portfolio! I’m a final-year IT student with a passion for technology and problem-solving. As I approach the culmination of my academic journey, I’ve had the opportunity to dive into diverse projects and hands-on experiences, from software development to system analysis. This portfolio showcases skills and projects, highlighting a commitment to innovation and readiness to tackle real-world challenges in the tech industry. Explore the work to see how I can contribute to your next technology-driven initiative.</p>
             <div class="btn-group">
-                <a href = "#" class="btn">
-                    Hire
-                </a>
-                <a href = "#contact" class="btn">
-                    Contact
-                </a>
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
             </div>
         </div>
-        <div class="home-img">
-            <img src="portfolio picture.jpg" alt="">
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/assets/portfolio_picture.jpg" alt="Kamogelo Taueatsoala">
         </div>
-        </section>
-        <section class="about" id="about">
-            <div class="about-img">
-                <img src="portfolio picture.jpg" alt="">
-            </div>
-            <div class="about-content">
-                <h2> About <span>
-                    Me
-                </span>
-                </h2>
-                <p>
-                    I’m a tech enthusiast driven to make an impact in the IT world. With a passion for innovation and problem-solving, I’m constantly exploring new challenges and opportunities. Take a look at my portfolio to see my latest work, and feel free to reach out if you’d like to connect or collaborate!
-                </p>
-            </br>
-                <a href="#" class="btn">
-                    Read More
-                </a>
-            </div>
-        </section>
-        <section class="services" id="services">
-            <h2 class="heading">
-                Services
-            </h2>
-        </br>
-            <div class="services-container">
-                <div class="service-box">
-                    <div class="service-info">
-                        <i class="bx bxs-devices"></i>
-                        <h4> Web development </h4>
-                    </div>
-                </div>
-                   
-                <div class="service-box">
-                    <div class="service-info">
-                        <i class="bx bx-code"></i>
-                        <h4> Frontend Development </h4>
-                    </div>
-                </div>
-                <div class="service-box">
-                    <div class="service-info">
-                        <i class="bx bx-code-curly"></i>
-                        <h4> Backend Development </h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <script src = "script.js"></script>
-    </body>
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>I’m a tech enthusiast driven to make an impact in the IT world. With a passion for innovation and problem-solving, I’m constantly exploring new challenges and opportunities. Take a look at my portfolio to see my latest work, and feel free to reach out if you’d like to connect or collaborate!</p>
+            
+            <!-- Download CV Button -->
+            <a href="/assets/Kamogelo_Taueatsoala_CV.pdf" download="Kamogelo_Taueatsoala_CV" class="btn btn-download">Download CV</a>
+        </div>
+    </section>
+
+  <section id="skills" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-8 text-center text-primary">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold mb-4">Business Analyst</h3>
+          <p>Proficient in analyzing business processes, identifying needs, and recommending solutions to improve efficiency and effectiveness. Skilled in stakeholder management, data analysis, and strategic planning.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold mb-4">UI/UX Design</h3>
+          <p>Proficient in designing user interfaces that are both visually appealing and user-friendly.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold mb-4">Backend Knowledge</h3>
+          <p>Understanding of backend technologies like Node.js and Express, with experience in building APIs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-8 text-center text-primary">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Block -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold mb-4">Project Title</h3>
+          <p></p>
+        </div>
+        <!-- Repeat Project Block -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-8 text-center text-primary">Contact Me</h2>
+      <form action="mailto:your.email@example.com" method="post" enctype="text/plain" class="max-w-lg mx-auto">
+        <label class="block mb-4">
+          <span class="text-gray-700">Name</span>
+          <input type="text" name="name" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+        </label>
+        <label class="block mb-4">
+          <span class="text-gray-700">Email</span>
+          <input type="email" name="email" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+        </label>
+        <label class="block mb-4">
+          <span class="text-gray-700">Message</span>
+          <textarea name="message" class="form-textarea mt-1 block w-full border-gray-300 rounded-md shadow-sm" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="bg-accent text-white py-2 px-6 rounded-full hover:bg-blue-600 transition">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-primary text-secondary py-4 text-center">
+    <p>&copy; 2024 Kamogelo Taueatsoala. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
