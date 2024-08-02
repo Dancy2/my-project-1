@@ -273,14 +273,21 @@ p{
 
 .home-content h1 {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 300;
     margin-bottom: 1rem;
     text-align: center;
 }
 
 .home-content h3 {
     font-size: 2rem;
+    font-weight: 700;
+    font-style: bold;
     margin-bottom: 1rem;
+    color: #e64a19;
+}
+
+.home-content h3:hover{
+    cursor: pointer;
 }
 
 .home-content p {
@@ -302,10 +309,11 @@ p{
 
 .icons{
     cursor: pounter;
-    height: 2rem;
+    height: 3rem;
+    border-radius: 6rem;
 }
 
-/*buttons*/
+/*button*/
 .btn-group {
     display: flex;
     gap: 1rem;
@@ -315,23 +323,18 @@ p{
 .btn {
     padding: 1rem;
     width: 8rem;
-    border-radius: 2rem;
     color: #fff;
-    border-radius: 8px;
+   border-radius: 6rem;
     font-size: 1rem;
-    background: rgba(53, 53, 53) ;
+    background: rgb(35, 35, 35) ;
     font-weight: 600;
     text-align: center;
     transition: all 300ms ease;
 }
 
-.btn-color{
-    border: rgba(53, 53, 53) 0.1rem solid;
-}
-
 .btn:hover {
     cursor: pointer;
-    color: white;
+    color: ;
 }
 
 .home-img img {
@@ -341,20 +344,75 @@ p{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* About Me Section */
-.about {
-    display:flex;
-    align-items: center;
-    padding: 5rem 5%;
-    background-color: var(--bg-light);
+/* About Section */
+#about {
+    position: relative;
+} 
+    
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: bold;
+    margin-bottom: 1rem;
+    color: #e64a19;
+}
+.about-containers{
+    gap: 2rem;
+    margin-bottom:2rem ;
+    margin-top: 2rem;
 }
 
-.about-img img {
-    width: 40%;
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container{
+    display: flex;
+}
+
+
+
+.about-img{
+    display: flex;
+    width: 80%;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container{
+    padding: 0;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53,53,) 0.1rem solid;
+    border-color: rgb(167, 167,167);
+    text-align: center;
+}
+
+.section-container{
+    gap: 4rem;
+    height: 80%;
+}
+
+.section_pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+.icon{
+    cursor: pounter;
+    height: 3rem;
+    border-radius: 6rem;
 }
 
 .about-content {
@@ -363,27 +421,29 @@ p{
 }
 
 .about-content h2 {
-    font-size: 2.5rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
 }
 
 .about-content p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.0;
+    margin-bottom: 1.2rem;
 }
 
 .btn-download {
-    background-color: var(--primary-color);
     color: #fff;
     padding: 0.75rem 1.5rem;
     border-radius: 8px;
     text-align: center;
     text-decoration: none;
+    border-radius: 6rem;
+    width: 8rem;
+    background-color: #e64a19;
 }
 
 .btn-download:hover {
-    background-color: var(--btn-hover-light);
+    background-color: black;
 }
 
 /* Skills Section */
