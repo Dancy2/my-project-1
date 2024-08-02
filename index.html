@@ -6,42 +6,74 @@
     <title>Kamogelo Taueatsoala</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="mediaqueries.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <a href="#home" class="logo">Kamogelo <span>Taueatsoala</span></a>
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <header class="desktop-nav" id="navbar">
+        <div href="#home" class="logo">Kamogelo</div>
+   
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
         <div class="theme-toggle">
             <i class="bx bx-sun" id="theme-light" style="display: none;"></i>
             <i class="bx bx-moon" id="theme-dark"></i>
         </div>
     </header>
 
-    <!-- Home Section -->
+    <nav class="mobile-nav" id="navbar">
+        <div class="logo">Kamogelo</div>
+        <div class="menu">
+            <div class="mobile-icon"onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        
+       
+        <div class="menu-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills"onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav>
+
+   
+
+    <!-- Home Section (Profile) -->
     <section class="home" id="home">
         <div class="home-content">
-            <h1>Hi, it's Kamogelo</h1>
-            <h3>Aspiring Business Analyst</h3>
-            <p>Welcome to this portfolio! I’m a final-year IT student with a passion for technology and problem-solving. As I approach the culmination of my academic journey, I’ve had the opportunity to dive into diverse projects and hands-on experiences, from software development to system analysis. This portfolio showcases skills and projects, highlighting a commitment to innovation and readiness to tackle real-world challenges in the tech industry. Explore the work to see how I can contribute to your next technology-driven initiative.</p>
-            <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
-                <a href="#contact" class="btn">Contact</a>
+            <div class="home-img">
+                <img src="/assets/portfolio picture.jpg" alt="Kamogelo Taueatsoala Profile Picture">
             </div>
-        </div>
+            <h1>Hello, I'm Kamogelo</h1>
+                <h3>Aspiring Business Analyst</h3>
+                <p>Welcome to this portfolio! I’m a final-year IT student with a passion for technology and problem-solving. As I approach the culmination of my academic journey, I’ve had the opportunity to dive into diverse projects and hands-on experiences, from software development to system analysis. This portfolio showcases skills and projects, highlighting a commitment to innovation and readiness to tackle real-world challenges in the tech industry. Explore the work to see how I can contribute to your next technology-driven initiative.</p>
+                <div class="btn-group">
+                    <button class="btn" onclick="location.href='./#contact'" >
+                        Contact Info
+                    </button>
+                </div>
+            </br>
+                <div class="social-container">
+                    <img src="./assets/bxl-linkedin-square.svg" alt="My LinkedIn Profile" class="icons" onclick=location.href="https://linkedin.com/">
+                    <img src="./assets/bxl-github.svg" alt="My Github Profile " class="icons" onclick=location.href="https://github.com/">
+                </div>
+        </div>    
     </section>
 
     <!-- About Me Section -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="/assets/portfolio_picture.jpg" alt="Kamogelo Taueatsoala">
+            <img src="/assets/portfolio picture.jpg" alt="Kamogelo Taueatsoala">
         </div>
         <div class="about-content">
             <h2>About <span>Me</span></h2>
@@ -74,7 +106,7 @@
 
   <section id="projects" class="py-16">
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold mb-8 text-center text-primary">Projects</h2>
+      <h2 class="projects">Projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Project Block -->
         <div class="bg-white p-6 rounded-lg shadow-lg">

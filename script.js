@@ -6,7 +6,13 @@ function toggleTheme() {
     document.getElementById('theme-dark').style.display = isDarkMode ? 'none' : 'inline-block';
 }
 
+function toggleMenu(){
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".mobile-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+}   
+
 // Add event listeners for theme toggle
 document.getElementById('theme-light').addEventListener('click', toggleTheme);
 document.getElementById('theme-dark').addEventListener('click', toggleTheme);
-  
