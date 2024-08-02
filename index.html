@@ -19,21 +19,19 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="theme-toggle">
-            <i class='bx bxs-sun' style='color:#f5f2f2'id="theme-light" style="display: none;"></i>
-            <i class="bx bx-moon" id="theme-dark"></i>
-        </div>
+        
     </header>
 
     <nav class="mobile-nav" id="navbar">
         <div class="logo">Kamogelo</div>
+        
         <div class="menu">
+           
             <div class="mobile-icon"onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-        
        
         <div class="menu-links">
             <li><a href="#home" onclick="toggleMenu()">Home</a></li>
@@ -50,7 +48,7 @@
     <section class="home" id="home">
         <div class="home-content">
             <div class="home-img">
-               <img src="/assets/portfolio picture.jpg">
+               <img src="/assets/portfolio picture.jpg"/>
             </div>
             <h1>Hello, I'm Kamogelo</h1>
             <h3>Aspiring Business Analyst</h3>
@@ -62,10 +60,10 @@
             </div>
         </br>
             <div class="social-container">
-                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com/in/kamogelo-taueatsoala-250105263/?originalSubdomain=za" target="_blank" rel="noopener noreferrer">
                     <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icons">
                 </a>
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/Kamogelo354/" target="_blank" rel="noopener noreferrer">
                     <img src="./assets/github.png" alt="My Github Profile" class="icons">
                 </a>
             </div>
@@ -98,15 +96,20 @@
                             </div>
                         </div>
                     </br>
+                </br>
                         <div>
-                            <button class="btn-download" onclick="window.open('./assets/')">Download CV
+                            <button class="btn-download" onclick="window.open('./assets/Resume.pdf')">Download CV
                             </button>   
-                       
+                        </br>
+                    </br>
+                </br>
                         </div>
                     </div>
+               
     </section>
 
     <section id="skills" class="skills">
+        </br
         <div class="container">
             <h2 class="container-box">Skills</h2>
             <div class="grid">
@@ -126,8 +129,18 @@
                     <h3 class="skill-title">Java</h3>
                     <p>Proficient in Java programming, including object-oriented programming principles, Java libraries, and frameworks for building robust and scalable applications.</p>
                 </div>
+
+                <div class="skill-card">
+                    <h3 class="text-2xl font-bold mb-4">C#</h3>
+                <p>Proficient in C# programming for developing desktop applications, and  web applications using .NET framework.</p>
+                </div>
             </div>
+        </br>
+    </br>
         </div>
+    </br>
+
+
     </section>
     
       
@@ -137,30 +150,26 @@
             <div class="form-container">
                 <form action="mailto:your.ktaueatsoala@outlook.com" method="post" enctype="text/plain" class="contact-form">
                     <label class="form-label">
-                        <span class="form-label-text">Name</span>
+                        <span class="form-label-text">Name :</span>
                         <input type="text" name="name" class="form-input" required>
                     </label>
                     <label class="form-label">
-                        <span class="form-label-text">Email</span>
+                        <span class="form-label-text">Email :</span>
                         <input type="email" name="email" class="form-input" required>
                     </label>
                     <label class="form-label">
-                        <span class="form-label-text">Message</span>
+                        <span class="form-label-text">Message :</span>
                         <textarea name="message" class="form-textarea" rows="4" required></textarea>
                     </label>
-                    <button type="submit" class="btn-submit">Send</button>
+                    <div class="button-container">
+                        <button type="submit" class="btn-submit">Send</button>
+                    </div>
                 </form>
             </div>
         </div>
     </section>
 </body>
 </html>
-
-    
-
-  <footer class="black text-secondary py-4 text-center">
-    <p>&copy; 2024 Kamogelo Taueatsoala. All rights reserved.</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>

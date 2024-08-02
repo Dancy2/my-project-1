@@ -102,3 +102,36 @@
         padding: 0.5rem 1rem;
     }
 }
+
+@media (max-width: 768px) {
+    .contact-heading {
+        font-size: 1.875rem; /* 30px */
+    }
+
+    .container {
+        padding: 0 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-heading {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    .form-input, .form-textarea {
+        padding: 0.5rem;
+    }
+
+    .btn-submit {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .desktop-nav{
+        display:flex
+    }
+    .mobile-nav{
+        display: none;
+    }
+}
